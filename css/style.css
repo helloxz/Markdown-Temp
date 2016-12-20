@@ -1,0 +1,38 @@
+body {
+	font-family:"Microsoft YaHei";
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-bottom: 22px;
+    margin-top: 22px;
+}
+img {display:block;}
+p {
+    margin: 0 0 10px;
+    line-height: 24px;
+    margin-bottom:20px;
+}
+li {
+	padding-bottom:5px;
+}
+blockquote p {
+	font-size:16px;
+}
+#btn {
+	width:149px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border:1px solid red;*/
+	margin-top:50px;
+}
+#btn a {
+	text-decoration: none;
+	border:0;
+	background:#3385FF;
+	color:#FFFFFF;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:4px;
+	padding-bottom:4px;
+	margin-left:auto;
+	margin-right:auto;
+}
