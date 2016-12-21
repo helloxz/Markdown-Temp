@@ -18,7 +18,7 @@ blockquote p {
 	font-size:16px;
 }
 #btn {
-	width:149px;
+	width:586px;
 	margin-left:auto;
 	margin-right:auto;
 	/*border:1px solid red;*/
@@ -34,5 +34,19 @@ blockquote p {
 	padding-top:4px;
 	padding-bottom:4px;
 	margin-left:auto;
-	margin-right:auto;
+	margin-right:20px;
 }
+#footer {
+			width:100%;
+			font-size:12px;
+			text-align:center;
+			/*background-color: #575757;*/
+			color:#737373;
+			line-height:32px;
+			position:fixed;
+			bottom:0;
+		}
+		#footer a {
+			text-decoration:none;
+			color:#919191;
+		}
