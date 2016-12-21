@@ -16,6 +16,7 @@
 	<meta name="author" content="" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://libs.bsdev.cn/highlight.js/9.8.0/styles/github.css">
 	<link rel="stylesheet" href="https://libs.bsdev.cn/bootstrap/3.3.0/css/bootstrap.min.css">
 	<script src = "https://libs.bsdev.cn/highlight.js/9.8.0/highlight.pack.js"></script>
