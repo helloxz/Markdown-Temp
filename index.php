@@ -52,7 +52,6 @@
 	<meta name="generator" content="EverEdit" />
 	<meta name="author" content="" />
 	<meta name="keywords" content="" />
-	<meta name="description" content="" />
 	<link rel="stylesheet" href="./editor/css/editormd.css" />
 	<link rel="stylesheet" href="./css/style.css">
 	<script src = "https://libs.bsdev.cn/jquery/1.9.1/jquery-1.9.1.min.js"></script>
