@@ -1,11 +1,36 @@
 <?php
-	session_start();
+	error_reporting(E_ALL^E_NOTICE^E_WARNING^E_DEPRECATED);
 	include_once( './Parsedown.php' );
 	$id = $_GET['id'];
-	$content = file_get_contents("./temp/".$id.".md");
+	//文件名称
+	$mdname = "./temp/$id.md";
+	//获取文件大小
+	$mdsize = filesize($mdname);
+	
+	//打开一个markdown文档
+	$fpmd = fopen($mdname,"r");
+	//读取整个文档并赋值
+	$content = fread($fpmd,$mdsize);
+	//文件不存在
+	if(!$fpmd) {
+		//返回404状态
+		header('HTTP/1.1 404 Not Found'); 
+		header("status: 404 Not Found"); 
+		//读取404页面
+		$error404 = file_get_contents("./404.html");
+		echo $error404;
+		exit;
+	}
+	//文件为空
+	if($content == "") {
+		$content = "<h3>空空如也</h3>";
+	}
+	//关闭fclose
+	fclose($fpmd);
+	
+	//初始化Parsedown
 	$Parsedown = new Parsedown();
-	//echo $Parsedown->text($content);
-	//echo $_SESSION['check'];
+	
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -62,7 +87,7 @@
 		}
 		li pre {
 		    margin-top: 8px;
-		}
+		}  
 	</style>
 	<script>hljs.initHighlightingOnLoad();</script>
 </head>
@@ -80,8 +105,11 @@
 	<script>
 		$(document).ready(function(){
 			$(".container img").addClass("img-responsive");
+			//通过获取第一个H1标签来生成标题
+			var mytitle = $(".htmlcontent h1").eq(0).text();
+			//改变文档标题
+			$("title").text(mytitle + " - Markdown Temp预览");
 		});
 	</script>
 </body>
 </html>
-

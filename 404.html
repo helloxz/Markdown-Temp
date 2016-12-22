@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>文件未找到</title>
+	<meta name="generator" content="EverEdit" />
+	<meta name="author" content="" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<style type = "text/css">
+		.error {
+			margin-top:80px;
+		}
+		.error h4{
+			text-align:center;
+			color:#525252;
+		}
+		.error a {
+			text-decoration:none;
+			color:#0099CC;
+		}
+	</style>
+</head>
+<body>
+	<div class = "error">
+		<center><img src="./img/404.jpg" alt=""></center>
+		<p><h4>您访问的页面不存在，即将<a href="./">返回首页</a></h4></p>
+	</div>
+	<script>
+		function jump() {
+			window.location.href = "./";
+		}
+		//setTimeout(func, timeout);
+		setInterval(jump, 5000);
+	</script>
+</body>
+</html>
