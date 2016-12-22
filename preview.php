@@ -65,7 +65,6 @@
 		}
 	</style>
 	<script>hljs.initHighlightingOnLoad();</script>
-	</style>
 </head>
 <body>
 	<div class="container">
